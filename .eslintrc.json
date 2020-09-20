@@ -1,12 +1,13 @@
 {
-  "extends": "prettier",
-  "plugins": ["prettier"],
+  "extends": "airbnb-base",
   "env": {
     "es6": true,
     "browser": true,
     "jest": true
   },
   "rules": {
-    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"]
+    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
+    "quotes": ["error", "double", { "avoidEscape": true }],
+    "no-console": ["error", { "allow": ["warn", "error", "log"] }]
   }
 }
